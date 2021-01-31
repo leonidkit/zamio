@@ -1,0 +1,8 @@
+DROP TABLE IF EXISTS accounts;
+
+CREATE TABLE accounts (
+    id SERIAL PRIMARY KEY,
+    email TEXT NOT NULL,
+    balance DOUBLE PRECISION NOT NULL DEFAULT 0,
+    UNIQUE(email)
+);
